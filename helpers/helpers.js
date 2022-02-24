@@ -13,4 +13,16 @@ function stringConverter(inputString) {
   return numberArr
 }
 
-module.exports = { stringConverter }
+//Match create working arrays to match input length
+function matchLength(arr, storage) {
+  let length = arr.length
+  let newArr = Array(length).fill(0)
+
+  if (!storage) {
+    newArr[arr.length - 1] = 1
+  }
+  return newArr
+}
+
+
+module.exports = { stringConverter, matchLength }
