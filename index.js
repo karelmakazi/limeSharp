@@ -4,7 +4,6 @@ const repeat = require("./commands/repeat")
 const reformat = require("./commands/reformat")
 const next_binary_number = require("./commands/next_binary_number")
 
-
 program
   .command("repeat <arg>")
   .description('INPUT: karelTest repeat "[1,2,3]" or 1,2,3')
